@@ -1,0 +1,60 @@
+:root {
+  --cell-size: 30px;
+  --space-between-cells: 3px;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --cell-size: 20px;
+    --space-between-cells: 1px;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App__board {
+  overflow: scroll;
+  max-width: 100vw;
+  .App__board_table {
+    margin: 0 auto;
+    .App__board_table_row {
+      display: flex;
+      .App__board_table_cell {
+        width: var(--cell-size);
+        height: var(--cell-size);
+        border: 1px solid grey;
+        box-sizing: border-box;
+        margin: var(--space-between-cells)
+      }
+      .App__board_table_cell_live {
+        background-color: grey;
+      }
+    }
+  }
+}
+
+button {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  margin: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: unset;
+}
+
+button[disabled] {
+  background-color: #dedede;
+}
+
+@media only screen and (min-width: 600px) {
+  .App__board {
+    overflow: unset
+  }
+}
