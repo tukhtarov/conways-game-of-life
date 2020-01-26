@@ -1,6 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Conway's game of life
+https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
 ### Installation
 
@@ -14,7 +15,7 @@ Enter the project directory:
 
 #### `cd conways-game-of-life/`
 
-Install dependancies:
+Install dependencies:
 
 #### `yarn`
 
